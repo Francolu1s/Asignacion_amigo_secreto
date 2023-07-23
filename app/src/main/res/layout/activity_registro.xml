@@ -1,0 +1,87 @@
+<!-- activity_registro.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/wrap"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <!-- Agregar el ScrollView para permitir desplazamiento si el contenido es demasiado largo -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <!-- Contenedor principal -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <!-- TextView para el título -->
+            <TextView
+                android:id="@+id/alli"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registro"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- EditText para ingresar el username -->
+            <EditText
+                android:id="@+id/editTextUsername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Username"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- EditText para ingresar el nombre -->
+            <EditText
+                android:id="@+id/editTextName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- EditText para ingresar el apellido -->
+            <EditText
+                android:id="@+id/editTextLastName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- EditText para ingresar la descripción del regalo -->
+            <EditText
+                android:id="@+id/editTextDescripcionRegalo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Descripción del Regalo"
+                android:inputType="text"
+                android:minHeight="48dp" />
+
+            <!-- EditText para ingresar el precio del regalo -->
+            <EditText
+                android:id="@+id/editTextPrecioRegalo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Precio del Regalo"
+                android:inputType="numberDecimal"
+                android:minHeight="48dp" />
+
+            <!-- Botón para registrar -->
+            <Button
+                android:id="@+id/buttonRegistrar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Registrar" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+
